@@ -7,6 +7,8 @@ class Student < ActiveRecord::Base
   validates :age, numericality: { greater_than: 4 }
   validates :phone, format: { with: /.*\d.*\d.*\d.*\d.*\d.*\d.*\d.*\d.*\d.*\d.*/ }
   
+  belongs_to :teacher
+  
   def name
     self.first_name + " " + self.last_name
   end
