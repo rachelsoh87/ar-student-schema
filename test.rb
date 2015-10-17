@@ -1,8 +1,9 @@
-require_relative "app/models/student.rb"
-#require_relative "app/models/teacher.rb"
+require_relative "app/models/student"
+require_relative "app/models/teacher"
+require_relative "app/models/teacher_student"
 require 'date'
 
-student = Student.find(1)
+# student = Student.find(1)
 #p student.name
 #p student.age
 
